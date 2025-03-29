@@ -1,0 +1,28 @@
+@media (max-width: 630px) {
+    .qr {
+        padding-top: 30px;
+        font-size: 24px;
+
+        &__input {
+            padding: 8px 20px;
+            font-size: 24px;
+            margin-bottom: 15px;
+            max-width: 300px;
+        }
+
+        &__button {
+            padding: 8px 25px;
+            font-size: 24px;
+            margin-bottom: 45px;
+        }
+
+        &__qrcode {
+            width: 140px;
+            margin-bottom: 15px;
+        }
+
+        &__output {
+            font-size: 32px;
+        }
+    }
+}
