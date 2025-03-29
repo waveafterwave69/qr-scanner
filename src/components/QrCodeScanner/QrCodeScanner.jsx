@@ -2,11 +2,10 @@ import { Scanner } from '@yudiel/react-qr-scanner'
 import { useState } from 'react'
 
 export default function QrCodeScanner() {
-    const [scanned, setScanned] = useState('')
+    const [scanned, setScanned] = useState(null)
 
     function scanHandler(result) {
-        console.log(result)
-        setScanned(res[0].rawValue)
+        setScanned(result[0].rawValue)
     }
 
     const scanSettings = {
