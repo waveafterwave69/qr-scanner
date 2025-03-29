@@ -25,4 +25,40 @@
             font-size: 32px;
         }
     }
+
+    .qr__scan {
+        margin: 0 auto;
+        max-width: 350px;
+
+        &-code div {
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            max-width: 240px;
+        }
+
+        &-output {
+            font-size: 32px;
+        }
+    }
+
+    .nav__list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        column-gap: 24px;
+        font-weight: 600;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        align-items: center;
+
+        &-link {
+            font-size: 18px;
+            color: black;
+        }
+
+        & .active {
+            text-decoration: underline;
+        }
+    }
 }

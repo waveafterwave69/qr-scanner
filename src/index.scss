@@ -1,5 +1,8 @@
 @use './style/normalize' as *;
+@use './style/globals' as *;
 
 @use './components/QrCodeGenerator/qrCodeGenerator' as *;
+@use './components/QrCodeScanner/qrCodeScanner' as *;
+@use './components/Navigation/navigation' as *;
 
 @use './style/media' as *;

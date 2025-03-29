@@ -1,5 +1,6 @@
 import { QRCodeSVG } from 'qrcode.react'
 import { useState } from 'react'
+import Navigation from '../Navigation/Navigation'
 
 export default function QrCodeGenerator() {
     const [qrText, setQrText] = useState('')
@@ -24,6 +25,7 @@ export default function QrCodeGenerator() {
 
     return (
         <>
+            <Navigation></Navigation>
             <div className="qr">
                 <input
                     type="text"

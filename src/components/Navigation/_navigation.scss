@@ -1,0 +1,19 @@
+.nav__list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 24px;
+    font-weight: 600;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    align-items: center;
+
+    &-link {
+        font-size: 20px;
+        color: black;
+    }
+
+    & .active {
+        text-decoration: underline;
+    }
+}

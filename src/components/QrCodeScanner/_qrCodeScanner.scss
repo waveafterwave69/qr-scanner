@@ -1,0 +1,19 @@
+.qr__scan {
+    margin: 0 auto;
+    max-width: 350px;
+
+    &-code {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    &-output {
+        font-size: 38px;
+        text-decoration: underline;
+        text-align: center;
+
+        & a {
+            color: black;
+        }
+    }
+}

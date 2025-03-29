@@ -1,5 +1,6 @@
 import { Scanner } from '@yudiel/react-qr-scanner'
 import { useState } from 'react'
+import Navigation from '../Navigation/Navigation'
 
 export default function QrCodeScanner() {
     const [scanned, setScanned] = useState(null)
@@ -21,15 +22,20 @@ export default function QrCodeScanner() {
 
     return (
         <>
+            <Navigation></Navigation>
             <div className="qr__scan">
-                <Scanner
-                    allowMultiple={true}
-                    onScan={scanHandler}
-                    components={scanSettings}
-                    styles={scanStyles}
-                />
+                <div className="qr__scan-code">
+                    <Scanner
+                        allowMultiple={true}
+                        onScan={scanHandler}
+                        components={scanSettings}
+                        styles={scanStyles}
+                    />
+                </div>
+                <div className="qr__scan-output">
+                    <a href={scanned}>{scanned}</a>
+                </div>
             </div>
-            <div className="qr__scan-output">{scanned}</div>
         </>
     )
 }

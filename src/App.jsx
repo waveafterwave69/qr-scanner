@@ -1,11 +1,28 @@
 import QrCodeGenerator from './components/QrCodeGenerator/QrCodeGenerator'
 import QrCodeScanner from './components/QrCodeScanner/QrCodeScanner'
+import Navigation from './components/Navigation/Navigation'
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <Navigation />,
+    },
+    {
+        path: '/generate',
+        element: <QrCodeGenerator />,
+    },
+    {
+        path: '/scan',
+        element: <QrCodeScanner />,
+    },
+])
 
 function App() {
     return (
         <>
-            {/* <QrCodeGenerator></QrCodeGenerator> */}
-            <QrCodeScanner></QrCodeScanner>
+            <RouterProvider router={router} />
         </>
     )
 }
