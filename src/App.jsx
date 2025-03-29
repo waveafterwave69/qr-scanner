@@ -1,9 +1,11 @@
 import QrCodeGenerator from './components/QrCodeGenerator/QrCodeGenerator'
+import QrCodeScanner from './components/QrCodeScanner/QrCodeScanner'
 
 function App() {
     return (
         <>
-            <QrCodeGenerator></QrCodeGenerator>
+            {/* <QrCodeGenerator></QrCodeGenerator> */}
+            <QrCodeScanner></QrCodeScanner>
         </>
     )
 }
